@@ -8,7 +8,7 @@ const SharkList = () => {
     const [sharks, setSharks] = useState();
 
     useEffect(() => {
-        fetch("http://localhost:3000/api/sharks/")
+        fetch(`${window.location.href}api/sharks/`)
             .then((response) => {
                 return response.json();
             })

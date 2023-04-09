@@ -8,7 +8,6 @@ import Shark from "../../models/Shark.js";
 const createShark = async (request, response) => {
     try {
         const newShark = await Shark.create(request.body);
-        
         response.status(200).json({
             message: 'successfully inserted a Shark to the database!',
             shark: newShark

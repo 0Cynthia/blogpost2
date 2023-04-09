@@ -32,7 +32,7 @@ app.get('/', (request, response) => {
 
 // binds host & port if the database connection is successful 
 mongoose.set('strictQuery', false);
-mongoose.connect(process.env.CONNECTION_STRING || 'mongodb://localhost:27017/tutorials')
+mongoose.connect(process.env.CONNECTION_SrTRINGs || 'mongodb://localhost:27017/tutorials')
     .then(() => {
         app.listen(process.env.PORT || 3000, () => {
             console.log('database connection successful!');
