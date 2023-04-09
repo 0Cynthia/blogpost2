@@ -12,8 +12,8 @@ import path from 'path';
 // returns this directories name
 const __dirname = url.fileURLToPath(new URL('.', import.meta.url));
 
-const FILE_BUILD = path.join(__dirname, "..", "..", "client", "build", "index.html");   // path to built html file
-const FILE_STATIC = path.join(__dirname, "..", "..", "client", "build");                // path to static files
+const FILE_BUILD = path.join(__dirname, "build", "index.html");    // path to built html file
+const FILE_STATIC = path.join(__dirname,  "build");                // path to static files
 
 // create an instance of express
 const app = express();
