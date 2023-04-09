@@ -9,7 +9,7 @@ const CreateSharkForm = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        fetch("http://localhost:3333/api/sharks", {
+        fetch("http://localhost:3000/api/sharks", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
